@@ -24,6 +24,7 @@ body *:active {
 html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 
 body {
@@ -36,12 +37,15 @@ body {
   font-family: 'Source Serif Pro', serif;
   text-align: left;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   background-size: cover;
   background-attachment: fixed;
+  height: 100%;
 }
 
-
+a:hover {
+  text-decoration: underline;
+}
 
 header {
   position: fixed;
@@ -53,9 +57,40 @@ header {
   z-index: 1;
 }
 
+.logo, .logoImg {
+  margin: auto;
+  width: 50%;
+}
+
+.logoImg { 
+  width: 240px;
+}
+
+.container {
+  background-color: rgb(39, 39, 39);
+  height: calc(100% - 150px);
+}
+
+#intro {
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+address {
+  margin: auto;
+  width: 50%;
+  font-size: 18px;
+  padding: 15px;
+}
+
 .container{
   position: relative;
-  top: 192px;
+  top: 130px;
+}
+
+.title {
+  font-size: 36px;
 }
 
 @media (max-width: 719px) {
