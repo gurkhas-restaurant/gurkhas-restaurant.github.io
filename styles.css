@@ -66,11 +66,6 @@ header {
   width: 240px;
 }
 
-.container {
-  background-color: rgb(39, 39, 39);
-  height: calc(100% - 150px);
-}
-
 #intro {
   margin: auto;
   padding: 15px;
@@ -87,6 +82,8 @@ address {
 .container{
   position: relative;
   top: 130px;
+  background-color: rgb(39, 39, 39);
+  height: calc(100% - 150px);
 }
 
 .title {
