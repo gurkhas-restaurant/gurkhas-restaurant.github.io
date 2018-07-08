@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <header>
@@ -60,25 +61,35 @@
     </div>
     <div id="contact">
       <h2>Contact</h2>
-      <p>Please fill out the form below and we will get back to you</p>
-      <form>
+      <p>Please fill out the form below to reach us</p>
+      <form id="gform" action="https://script.google.com/macros/s/AKfycbzN0iUcmnRT1t4l_IjKnMX_md2YeGc6fGtIFgmtHFbRe-uXrhsK/exec"
+        method="POST">
         <div>
-          Name*: <input type="text" name="name" />
+          Name*: <input type="text" name="name" required />
         </div>
         <div>
-          Email*: <input type="email" name="email" />
+          Email*: <input type="email" name="email" required />
         </div>
         <div>
           Phone Number: <input type="tel" name="phone" />
         </div>
         <div>
-          <textarea type="text">
+          Message: <textarea type="text" name="comment" required>
           </textarea>
         </div>
         <div>
+          <input id="honeypot" type="text" name="honeypot" value="" />
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Lfa3mIUAAAAAABWtBCqNvVWY9Ku7BsUYBkMllZC"></div>
+        <div>
           <input type="submit" value="Submit" />
         </div>
+        <div id="errorMsg" style="display: none"></div>
       </form>
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+      </div>
     </div>
     <div id="services">
       <h2>Services</h2>
@@ -89,5 +100,7 @@
     Footer
   </footer>
   <script src="site.js"></script>
+  <script data-cfasync="false" type="text/javascript"
+    src="form-submission-handler.js"></script>
 </body>
 </html>
