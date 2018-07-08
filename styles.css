@@ -50,7 +50,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 1;
   line-height: 32px;
   font-size: 14px;
@@ -100,6 +100,7 @@ header .address li a span{
 }
 
 header nav {
+  clear: both;
   display: block;
   font-size: 20px;
 }
@@ -111,6 +112,7 @@ header nav li {
 }
 
 header nav li:before {
+  display: block;
   position: absolute;
   left: -2px;
   top: 20%;
@@ -125,8 +127,12 @@ header nav li a .icon {
 }
 
 .container {
+  display: block;
   position: relative;
-  top: 192px;
+  clear: both;
+  background-color: #000000;
+  margin: 192px 0 0 0;
+  padding: 32px;
 }
 
 @media (max-width: 719px) {
@@ -141,17 +147,46 @@ header nav li a .icon {
     background-image: url("assets/images/background-desktop.jpg");
   }
   header .content {
+    position: relative;
     width: 640px;
+    margin: 0 auto;
+  }
+  header .logo {
+    width: 206px;
     margin: 0 auto;
   }
   header .logo img {
     height: 128px;
     width: auto;
   }
+  header .address {
+    padding-top: 12px;
+    padding-left: 32px;
+  }
+  header .address li {
+    padding: 5px 0;
+  }
+  header nav {
+    position: absolute;
+    right: 0;
+    width: 25%;
+  }
+  header nav li {
+    width: auto;
+    float: none;
+    text-align: left;
+    padding: 5px 0;
+  }
+  header nav li:before {
+    display: none;
+  }
+  header nav li a .icon {
+    display: inline-block;
+  }
   .container{
     width: 640px;
-    padding: 0 0 1rem 0;
-    margin: 0 auto;
+    margin: 192px auto 16px auto;
+    padding: 16px;
   }
 }
 /* large */
