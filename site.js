@@ -17,13 +17,13 @@ request.addEventListener('load', function () {
   categoryNameList.forEach(function (categoryName) {
     var list = categories[categoryName]
     markup += '<div>'
-    markup += '  <h3>' + categoryName + '</h3>'
+    markup += `  <h3 class="catagory"> ${categoryName}  </h3>`
     markup += '  <ul>'
     list.forEach(function (item) {
       markup += '<li>'
-      markup += '  <h4>' + item.name + '</h4>'
-      markup += '  <h5>' + item.price + '</h5>'
-      markup += '  <p>' + item.description + '</p>'
+      markup += `  <h4 class="itemName">  ${item.name}  </h4>`
+      markup += `  <h5 class="itemPrice"> $ ${item.price}  </h5>`
+      markup += `  <p class="itemDescription">  ${item.description} </p>`
       markup += '</li>'
     })
     markup += '  </ul>'

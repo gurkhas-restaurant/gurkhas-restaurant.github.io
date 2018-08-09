@@ -137,6 +137,34 @@ header nav li a .icon {
   padding: 32px;
 }
 
+.catagory {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  padding: 20px;
+}
+
+#menu-items ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.itemName, .itemPrice {
+  font-size: 18px;
+  font-weight: 700;
+  color: #EF1F28;
+  display: inline;
+  padding: 10px;
+}
+
+.itemDescription {
+  padding: 0 0 10px 10px;
+}
+
+.itemPrice {
+  float: right;
+}
+
 @media (max-width: 719px) {
   body {
     background-image: url("assets/images/background-mobile.jpg");
