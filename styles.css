@@ -167,43 +167,63 @@ header nav li a .icon {
   margin: 192px 0 0 0;
   padding: 32px;
 }
-
-.catagory {
-  color: white;
-  font-size: 48px;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 32px;
+  line-height: 32px;
+  padding-bottom: 16px;
   text-align: center;
-  padding: 20px;
+}
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+.catagory {
+  font-size: 48px;
+  line-height: 48px;
+  color: white;
+  padding-bottom: 16px;
 }
 
 #menu-items ul {
   list-style: none;
-  padding: 10px;
+  padding-bottom: 8px;
+}
+#menu-items ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+}
+#menu-items ul li {
+  padding: 0 16px 16px 16px;
+  box-sizing: border-box;
+}
+#menu-items ul li:nth-child(odd) {
+  clear: left;
 }
 
-.itemName, .itemPrice {
+.itemName,
+.itemPrice {
   font-size: 18px;
   font-weight: 700;
   color: #EF1F28;
   display: inline;
-  padding: 10px;
 }
-
-.itemDescription {
-  padding: 0 0 10px 10px;
-}
-
 .itemPrice {
   float: right;
 }
 
-@media (max-width: 719px) {
+.itemDescription {
+  padding: 0;
+}
+
+@media all and (max-width: 719px) {
   body {
     background-image: url("assets/images/background-mobile.jpg");
   }
 }
 
 /* medium */
-@media (min-width: 720px) {
+@media all and (min-width: 720px) {
   body {
     background-image: url("assets/images/background-desktop.jpg");
   }
@@ -254,16 +274,20 @@ header nav li a .icon {
   }
 }
 /* large */
-@media (min-width: 920px) {
+@media all and (min-width: 920px) {
   .container{
     width: 800px;
+  }
+  #menu-items ul li {
+    float: left;
+    width: 50%;
   }
   .form {
     max-width: 40vw;
   }
 }
 /* xlarge */
-@media (min-width: 1020px) {
+@media all and (min-width: 1020px) {
   .container{
     width: 960px;
   }
