@@ -128,6 +128,37 @@ header nav li a .icon {
   display: none;
 }
 
+.form {
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.form label {
+  display: block;
+}
+
+.form input,
+.form textarea {
+  border: 2px solid #FFFFFF;
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form input[type="submit"] {
+  display: block;
+  border-radius: 4px;
+  background-color: #EF1F28;
+  line-height: 32px;
+  height: 32px;
+  padding: 0 32px;
+  text-align: center;
+  margin-top: 32px;
+  border: none;
+  width: auto;
+}
+
 .container {
   display: block;
   position: relative;
@@ -218,11 +249,17 @@ header nav li a .icon {
     margin: 192px auto 16px auto;
     padding: 16px;
   }
+  .form {
+    max-width: 60vw;
+  }
 }
 /* large */
 @media (min-width: 920px) {
   .container{
     width: 800px;
+  }
+  .form {
+    max-width: 40vw;
   }
 }
 /* xlarge */

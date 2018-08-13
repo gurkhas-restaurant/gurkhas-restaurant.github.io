@@ -61,21 +61,24 @@
     </div>
     <div id="contact">
       <h2>Contact</h2>
-      <p>Please fill out the form below to reach us</p>
-      <form id="gform" action="https://script.google.com/macros/s/AKfycbzN0iUcmnRT1t4l_IjKnMX_md2YeGc6fGtIFgmtHFbRe-uXrhsK/exec"
+      <form class="form" id="gform" action="https://script.google.com/macros/s/AKfycbzN0iUcmnRT1t4l_IjKnMX_md2YeGc6fGtIFgmtHFbRe-uXrhsK/exec"
         method="POST">
+        <p>Please fill out the form below to reach us</p>
         <div>
-          Name*: <input type="text" name="name" required />
+          <label for="name">Name*:</label>
+          <input type="text" id="name" name="name" required />
         </div>
         <div>
-          Email*: <input type="email" name="email" required />
+          <label for="email">Email*:</label>
+          <input type="email" id="email" name="email" required />
         </div>
         <div>
-          Phone Number: <input type="tel" name="phone" />
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" />
         </div>
         <div>
-          Message: <textarea type="text" name="comment" required>
-          </textarea>
+          <label for="comment">Message:</label>
+          <textarea type="text" id="comment" name="comment" required></textarea>
         </div>
         <div>
           <input id="honeypot" type="text" name="honeypot" value="" />
@@ -95,9 +98,6 @@
       <p>Here is some information about our services</p>
     </div>
   </div>
-  <footer class="footer">
-    Footer
-  </footer>
   <script src="site.js"></script>
   <script data-cfasync="false" type="text/javascript"
     src="form-submission-handler.js"></script>
