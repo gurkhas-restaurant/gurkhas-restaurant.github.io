@@ -49,7 +49,7 @@ var renderContent = function (loadEvent) {
   list.forEach(function (section) {
     var sectionContainer = document.getElementById(section.name)
     if (sectionContainer) {
-      sectionContainer.innerHTML = '<div><h1>' + section.title + '</h1>' + section.body + '</div>'
+      sectionContainer.innerHTML = '<div><h1 class="title">' + section.title + '</h1>' + section.body + '</div>'
     }
   })
 }

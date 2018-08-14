@@ -43,6 +43,10 @@ body {
   height: 100%;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 #honeypot {
   display: none;
 }
@@ -73,6 +77,7 @@ header ul li a .icon {
 }
 
 header .logo {
+  cursor: pointer;
   max-width: 40%;
   float: left;
 }
@@ -128,10 +133,19 @@ header nav li a .icon {
   display: none;
 }
 
-.form {
+.title {
+  color: #EF1F28;
+}
+
+.form, .hours {
   width: 100%;
   margin: 0 auto;
   font-family: sans-serif;
+}
+
+.hours {
+  text-align: center;
+  list-style-type: none;
 }
 
 .form label {
@@ -178,8 +192,8 @@ h1 {
   line-height: 48px;
 }
 .catagory {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 32px;
   color: white;
   padding-bottom: 16px;
 }
@@ -269,7 +283,7 @@ h1 {
     margin: 192px auto 16px auto;
     padding: 16px;
   }
-  .form {
+  .form, .hours {
     max-width: 60vw;
   }
 }
@@ -282,7 +296,7 @@ h1 {
     float: left;
     width: 50%;
   }
-  .form {
+  .form, .hours {
     max-width: 40vw;
   }
 }
