@@ -18,9 +18,8 @@
     var form = document.getElementById("gform");
     var elements = form.elements;
 
-    var fields = Object.keys(elements).filter(function(k) {
-          return (elements[k].name !== "honeypot");
-    }).map(function(k) {
+    var fields = Object.keys(elements)
+    .map(function(k) {
       if(elements[k].name !== undefined) {
         return elements[k].name;
       // special case for Edge's html collection
