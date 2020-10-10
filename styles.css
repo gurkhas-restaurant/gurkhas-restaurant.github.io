@@ -18,13 +18,14 @@
 .flex-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
 .flex-container > div {
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
 }
 
 body *:focus,
